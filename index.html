@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <title>Intro to fetch and DOM</title>
+</head>
+<body class="grey lighten-3">
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <h4>Search Github Repositories</h3>
+        <form id="search-form">
+          <div class="input-field">
+            <input type="text" id="query">
+            <label for="query">Search</label>
+          </div>
+          <input type="submit" value="search" class="btn">
+        </form>
+        <h4>Repository List</h3>
+        <table class="striped">
+          <thead>
+            <th>#</th>
+            <th>Name</th>
+            <th>Owner</th>
+            <th>Forks</th>
+          </thead>
+          <tbody id="repo-list">
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
